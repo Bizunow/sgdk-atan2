@@ -66,7 +66,7 @@ fix32 rad2deg(fix32 rad);
 
 /**
  *  \brief
- *      Convert radians to SGDK value [0..1024]
+ *      Convert radians to SGDK value [0..1024], useful for SGDK sin-cos opertaions
  *
  *  \param rad
  *      radians
