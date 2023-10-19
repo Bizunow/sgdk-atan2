@@ -22,25 +22,25 @@ int main() {
 	//                                y2-y1              x2-x1
 	thetaRad  = atan2LUTif(intToFix32(11-11), intToFix32(12-11));
 	thetaDeg  = rad2deg(thetaRad); // Return 0..360
-	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful sin-cos opertaions)
+	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful for SGDK sin-cos opertaions)
 	sprintf(buff1, "%d %d", fix32ToRoundedInt(thetaDeg), fix32ToRoundedInt(thetaSgdk));
 
 	//                               y2-y1              x2-x1
 	thetaRad = atan2LUTif(intToFix32(10-11), intToFix32(11-11));
 	thetaDeg = rad2deg(thetaRad); // Return 0..360
-	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful sin-cos opertaions)
+	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful for SGDK sin-cos opertaions)
 	sprintf(buff2, "%d %d", fix32ToRoundedInt(thetaDeg), fix32ToRoundedInt(thetaSgdk));
 
 	//                               y2-y1              x2-x1
 	thetaRad = atan2LUTif(intToFix32(11-11), intToFix32(10-11));
 	thetaDeg = rad2deg(thetaRad); // Return 0..360
-	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful sin-cos opertaions)
+	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful for SGDK sin-cos opertaions)
 	sprintf(buff3, "%d %d", fix32ToRoundedInt(thetaDeg), fix32ToRoundedInt(thetaSgdk));
 
 	//                               y2-y1              x2-x1
 	thetaRad = atan2LUTif(intToFix32(12-11), intToFix32(11-11));
 	thetaDeg = rad2deg(thetaRad); // Return 0..360
-	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful sin-cos opertaions)
+	thetaSgdk = rad2degSGDK(thetaRad); // Return 0..1024 (Useful for SGDK sin-cos opertaions)
 	sprintf(buff4, "%d %d", fix32ToRoundedInt(thetaDeg), fix32ToRoundedInt(thetaSgdk));
 
 	while(1)
