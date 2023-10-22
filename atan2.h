@@ -72,7 +72,7 @@ fix32 rad2deg(fix32 rad);
  *      radians
  * 
  *  \return
- *      Degrees [0..360] converted from radians, return value is an integer defined as [0..1024] range corresponding to radian [0..2PI] range
+ *      Return value is an integer defined as [0..1024] range corresponding to radian [0..2PI] range
  */
 fix32 rad2degSGDK(fix32 rad);
 
@@ -87,7 +87,7 @@ fix32 rad2degSGDK(fix32 rad);
  *      X, usually the difference x2 - x1
  * 
  *  \return
- *      Degrees [0..360] converted from radians, return value is an integer defined as [0..1024] range corresponding to radian [0..2PI] range
+ *      Returns a value in the range -PI to PI radians
  */
 fix32 atan2LUTif(fix32 y, fix32 x);
 
