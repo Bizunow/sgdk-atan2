@@ -17,18 +17,18 @@ fix32 rad2degSGDK(fix32 rad) {
 
 fix32 atan2LUTif(fix32 y, fix32 x) 
 {
-	fix32 absx, absy, val;
+    fix32 absx, absy, val;
 
-	if (x == FIX32(0) && y == FIX32(0)) {
-		return FIX32(0.0);
-	}
+    if (x == FIX32(0) && y == FIX32(0)) {
+        return FIX32(0.0);
+    }
 
-	absy = abs(y);
-	absx = abs(x);
-	
-	if (fix32Sub(absy, absx) == absy) {
-		return y < FIX32(0) ? FIX32(-M_PI_2) : FIX32(M_PI_2);
-	}
+    absy = abs(y);
+    absx = abs(x);
+
+    if (fix32Sub(absy, absx) == absy) {
+        return y < FIX32(0) ? FIX32(-M_PI_2) : FIX32(M_PI_2);
+    }
 
     if (y > FIX32(0)) {
         if (absx > absy) {
@@ -52,5 +52,5 @@ fix32 atan2LUTif(fix32 y, fix32 x)
         val = x < FIX32(0) ? fix32Sub(FIX32(-M_PI), val) : val;
     }
 
-	return val;
+    return val;
 }
